@@ -1,0 +1,1 @@
+export type TestPhase = 'idle' | 'downloadTest' | 'uploadTest' | 'completed';
