@@ -2,15 +2,16 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import { testPhaseAtom } from "@/store/atoms";
 import { LinearGradient } from "expo-linear-gradient";
 import { useAtom } from "jotai";
+import { SpeedTestCTA } from "@/components/Elements";
+import { COLORS } from "@/constants/colors";
 
 export default function Index() {
-  const [phase, setPhase] = useAtom(testPhaseAtom);
-
   return (
-    <LinearGradient colors={["#264D55", "#03070A"]} style={styles.container}>
-      <TouchableOpacity onPress={() => setPhase("downloadTest")}>
-        <Text style={{ color: "white" }}>SPEED TEST {phase}</Text>
-      </TouchableOpacity>
+    <LinearGradient
+      colors={[COLORS.blueDianne, COLORS.ebony]}
+      style={styles.container}
+    >
+      <SpeedTestCTA />
     </LinearGradient>
   );
 }
