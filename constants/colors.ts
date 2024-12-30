@@ -5,5 +5,6 @@ export const COLORS = {
   cyberGrape: "#5C3F76",
   paleViolet: "#C89CF4",
   blueDianne: "#264D55",
-  ebony: "#03070A"
+  ebony: "#03070A",
+  white: "#FFFFFF",
 } as const;

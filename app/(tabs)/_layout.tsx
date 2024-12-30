@@ -12,7 +12,7 @@ export default function TabLayout() {
         tabBarStyle: styles.tabBar,
 
         tabBarBackground: () => (
-          <BlurView intensity={30} style={styles.blurTabBar} />
+          <BlurView intensity={50} tint="dark" style={styles.blurTabBar} />
         ),
         tabBarActiveTintColor: "#12F9ED",
         tabBarInactiveTintColor: "gray",
@@ -51,9 +51,12 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     position: "absolute",
     bottom: 0,
+    height: 80,
+    paddingTop: 4
   },
   blurTabBar: {
     borderWidth: 0,
     ...StyleSheet.absoluteFillObject,
+    height: 80
   },
 });
